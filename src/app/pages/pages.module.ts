@@ -8,6 +8,7 @@ import { AboutComponent } from './about/about.component';
 import { FaqComponent } from './faq/faq.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { ServicesComponent } from './services/services.component';
+import { UiExamplesComponent } from './ui-examples/ui-examples.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { ServicesComponent } from './services/services.component';
     FaqComponent,
     ContactsComponent,
     ServicesComponent,
+    UiExamplesComponent
   ],
   imports: [
     CommonModule,

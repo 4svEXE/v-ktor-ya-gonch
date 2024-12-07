@@ -1,31 +1,57 @@
-label {
-    font-family: Nunito Sans;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: left;
-    color: #fff;
-    padding-bottom: 12px;
-    padding-top: 16px;
-}
+@use 'variables' as *;
 
-input,
-textarea {
-    padding: 8px 16px;
-    gap: 8px;
-    border-radius: 40px;
-    color: #000;
-    background: #F6F8FA;
+@mixin form-group {
+  .form-group {
+    margin-bottom: $spacing-large;
 
-    @media (max-width: $media-tablet) {
-        padding: 8px;
+    label {
+      display: block;
+      font-size: $font-size-small;
+      color: $dark-gray;
+      margin-bottom: $spacing-small;
     }
+
+    .form-control {
+      width: 100%;
+      padding: $spacing-small $spacing-medium;
+      border: 1px solid $border-color;
+      border-radius: $border-radius;
+      font-size: $font-size-base;
+      outline: none;
+
+      &:focus {
+        border-color: $primary-color;
+        box-shadow: 0 0 0 2px $focus-shadow-color;
+      }
+    }
+  }
 }
 
-textarea {
-    padding: 16px;
-}
+@mixin keypad {
+  .keypad {
+    display: flex;
+    justify-content: space-between;
+    gap: $spacing-small;
 
-input {
-    height: 48px;
+    button {
+      flex: 1;
+      padding: $spacing-medium;
+      font-size: $font-size-base;
+      background: $light-gray;
+      border: 1px solid $border-color;
+      border-radius: $border-radius;
+      color: $dark-gray;
+      cursor: pointer;
+      transition: background 0.2s ease;
+
+      &:hover {
+        background: $secondary-color;
+      }
+
+      &:disabled {
+        background: $light-gray;
+        cursor: not-allowed;
+      }
+    }
+  }
 }

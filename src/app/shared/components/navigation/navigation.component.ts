@@ -19,5 +19,6 @@ export class NavigationComponent {
     { path: 'faq', label: 'Навчання' },
     { path: 'services', label: 'Про мене' },
     { path: 'contacts', label: 'Калькулятор сумісності' },
+    { path: 'ui-examples', label: 'ui-examples' },
   ];
 }

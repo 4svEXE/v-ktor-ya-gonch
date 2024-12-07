@@ -1,7 +1,5 @@
-@import "./variables";
-@import "./wrappers";
-@import "./typography";
-@import "./helpers";
-@import "./scrollbar";
-@import "./forms";
-@import "./animation";
+@use "./variables" as *;
+@use "./typography" as *;
+@use "./wrappers" as *;
+@use "./forms" as *;
+@use "./buttons" as *;
