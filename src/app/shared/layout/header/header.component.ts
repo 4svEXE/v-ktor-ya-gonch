@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { NavigationComponent } from '../../components/navigation/navigation.component';
@@ -6,7 +7,7 @@ import { SvgIconsInterface, SvgService } from '../../../core/services/svg.servic
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule, NavigationComponent],
+  imports: [CommonModule, NavigationComponent, RouterModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
