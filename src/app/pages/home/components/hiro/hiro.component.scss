@@ -2,10 +2,21 @@
   height: 100vh;
   position: relative;
 
+  .logo{
+    width: 100%;
+    max-width: 500px;
+  }
+
   .left-column {
     // Додаткові стилі для лівої колонки
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    .text {
+      width: fit-content;
+    }
   }
 
   .right-column {
@@ -14,13 +25,13 @@
     width: 100%;
 
     img {
-      width: 100%;
-      height: 100%;
+      // width: 100%;
+      // height: 100%;
       object-fit: cover;
     }
   }
 
-  .to-matrix{
+  .to-matrix {
     position: absolute;
     left: 50%;
     bottom: 50%;
@@ -28,18 +39,21 @@
 
     @media (min-width: 768px) {
       left: 50%;
-      bottom: 0%;
+      bottom: 50px;
       transform: translate(-50%, -50%);
     }
   }
 
-  .left-column, .right-column {
+  .left-column,
+  .right-column {
     height: 50%;
   }
 
   @media (min-width: 768px) {
     flex-direction: row;
-    .left-column, .right-column {
+
+    .left-column,
+    .right-column {
       width: 50%;
       height: 100%;
     }

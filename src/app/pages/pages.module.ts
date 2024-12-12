@@ -16,12 +16,12 @@ import { UiExamplesComponent } from './ui-examples/ui-examples.component';
     FaqComponent,
     ContactsComponent,
     ServicesComponent,
-    UiExamplesComponent
+    UiExamplesComponent,
   ],
   imports: [
     CommonModule,
     // PagesRoutingModule,
-    HomeModule
+    HomeModule,
   ]
 })
 export class PagesModule { }

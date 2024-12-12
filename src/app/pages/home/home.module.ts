@@ -1,3 +1,4 @@
+
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
@@ -12,6 +13,7 @@ import { MyServicesComponent } from './components/my-services/my-services.compon
 import { EtapsComponent } from './components/etaps/etaps.component';
 import { ReviewsComponent } from './components/reviews/reviews.component';
 import { ContactFormComponent } from './components/contact-form/contact-form.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 
 
@@ -31,12 +33,14 @@ import { ContactFormComponent } from './components/contact-form/contact-form.com
   imports: [
     CommonModule,
     NgxChartsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CarouselModule
   ],
   exports: [
     HomeComponent,
     MatrixCalculatorComponent
   ],
-  schemas: [NO_ERRORS_SCHEMA]
+  // schemas: [NO_ERRORS_SCHEMA]
+  schemas: []
 })
 export class HomeModule { }

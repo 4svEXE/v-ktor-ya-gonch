@@ -14,11 +14,19 @@ export class NavigationComponent {
   navMainClass = 'flex gap-4 ';
 
   routes = [
-    { path: 'home', label: 'Калькулятор' },
-    { path: 'about', label: 'Варіанти консультацій' },
-    { path: 'faq', label: 'Навчання' },
-    { path: 'services', label: 'Про мене' },
-    { path: 'contacts', label: 'Калькулятор сумісності' },
+    { path: '/#старт', label: 'Старт' },
+    { path: '#про-мене', label: 'про мене' },
+    { path: '#про-матрицю-долі', label: 'Про матрицю долі' },
+    { path: '#матриця-долі', label: 'Матриця долі' },
+    { path: '#відгуки', label: 'Відгуки' },
+    { path: '#контакти', label: 'Зв"язатись' },
+
     { path: 'ui-examples', label: 'ui-examples' },
+    // { path: 'home', label: 'Калькулятор' },
+    // { path: 'about', label: 'Варіанти консультацій' },
+    // { path: 'faq', label: 'Навчання' },
+    // { path: 'services', label: 'Про мене' },
+    // { path: 'contacts', label: 'Калькулятор сумісності' },
+    // { path: 'ui-examples', label: 'ui-examples' },
   ];
 }

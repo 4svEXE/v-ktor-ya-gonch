@@ -61,3 +61,10 @@ When there are extraRoutes in your config, we will still try to render those.
 
 No routes defined in ""
 No routes defined in ""
+No routes defined in ""
+handleUnknownRoute: "/assets/review2.jpg", 404:""handleUnknownRoute: "/assets/review3.jpg", 404:""handleUnknownRoute: "/assets/review1.jpg", 404:""
+
+
+handleUnknownRoute: "/assets/review2.jpg", 404:""handleUnknownRoute: "/assets/review3.jpg", 404:""handleUnknownRoute: "/assets/review1.jpg", 404:""
+
+

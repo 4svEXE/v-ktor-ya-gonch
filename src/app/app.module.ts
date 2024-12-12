@@ -13,6 +13,8 @@ import { PagesModule } from './pages/pages.module';
 import { HeaderComponent } from './shared/layout/header/header.component';
 import { FooterComponent } from './shared/layout/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [AppComponent],
@@ -25,8 +27,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     PagesModule,
     ScullyLibModule,
     BrowserAnimationsModule,
+    ToastrModule.forRoot({
+      positionClass: 'toast-bottom-right', // Налаштування позиції
+      preventDuplicates: true,
+    }),
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    CarouselModule,
+
+
+
   ],
   bootstrap: [AppComponent]
 })
