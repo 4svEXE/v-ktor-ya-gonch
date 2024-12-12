@@ -3,16 +3,12 @@
 @tailwind utilities;
 
 @import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
-@import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+// @import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
 
 @import "app/shared/scss/index";
 
 @layer base {
   html {
     scroll-behavior: smooth;
-  }
-
-  .calc-download-button{
-    background-color: red !important;
   }
 }

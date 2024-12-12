@@ -1,3 +1,5 @@
+@import "../../../../shared/scss/variables.scss";
+
 .hero-section {
   height: 100vh;
   position: relative;
@@ -8,11 +10,11 @@
   }
 
   .left-column {
-    // Додаткові стилі для лівої колонки
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: $secondary-color;
 
     .text {
       width: fit-content;
@@ -20,13 +22,10 @@
   }
 
   .right-column {
-    // Стилі для правої колонки
     position: relative;
     width: 100%;
 
     img {
-      // width: 100%;
-      // height: 100%;
       object-fit: cover;
     }
   }
@@ -34,8 +33,8 @@
   .to-matrix {
     position: absolute;
     left: 50%;
-    bottom: 50%;
-    transform: translate(0, -50%);
+    // bottom: 50%;
+    transform: translate(-50%, -50%);
 
     @media (min-width: 768px) {
       left: 50%;
@@ -50,8 +49,6 @@
   }
 
   @media (min-width: 768px) {
-    flex-direction: row;
-
     .left-column,
     .right-column {
       width: 50%;

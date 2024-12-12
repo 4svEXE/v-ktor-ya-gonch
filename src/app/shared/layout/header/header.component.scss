@@ -1,9 +1,12 @@
+@import '../../../shared/scss/variables.scss';
+
 header {
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
   position: fixed;
   width: 100%;
   left: 0;
   top: 0;
+  background-color: $dark-gray;
 }
 
 .mobile-menu-container {
